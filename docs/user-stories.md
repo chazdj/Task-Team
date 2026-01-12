@@ -96,7 +96,7 @@ US-36: As a user, I want to mark notifications as read, so that I can keep my no
 
 US-37: As a user, I want notifications to link directly to the relevant task, discussion, or project, so that I can take action quickly. 
 
-## 11 Nice-to-Have  
+## 11 Nice-to-Have Features
 
 US-38: As a user, I want to switch between light and dark mode, so that the interface is comfortable in different environments. 
 
