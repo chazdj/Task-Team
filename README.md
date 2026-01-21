@@ -20,5 +20,9 @@ The platform combines structured task management with real-time chat, project di
 - **Realtime:** Supabase Realtime
 - **Deployment:** Vercel
 
+## Data Modeling
+The data model for TaskTeam is documented using conceptual, logical, and physical ER diagrams.  
+See [ER Diagrams](docs/er-diagrams/README.md) for details.
+
 ## Project Status
 🚧 Currently in the planning and design phase.
