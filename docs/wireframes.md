@@ -16,29 +16,29 @@ Wireframes were created to define layout, navigation, and feature placement befo
 - Notifications Panel
 
 ## Authentication
-![Login / Sign Up](images/image-2.png)
+![Login / Sign Up](wireframe-images\01-authentication.png)
 
 ## Teams Dashboard
-![Teams Dashboard](images/image-3.png)
+![Teams Dashboard](wireframe-images\02-dashboard.png)
 
 ## Projects Screen
-![Active Projects Screen](images/image-4.png)
-![Archived Projects Screen](images/image-5.png)
+![Active Projects Screen](wireframe-images\03-active-projects.png)
+![Archived Projects Screen](wireframe-images\04-archive-projects.png)
 
 ## Task Board with Team Chat
-![Task Board with Team Chat](images/image-6.png)
+![Task Board with Team Chat](wireframe-images\05-task-board.png)
 
 ## Project Discussions
-![Project Discussions Forum](images/image-7.png)
+![Project Discussions Forum](wireframe-images\06-project-discussion.png)
 
 ## Activity Feed (read-only)
-![Project Activity Feed](images/image-8.png)
+![Project Activity Feed](wireframe-images\07-activity-feed.png)
 
 ## Notifications Panel
-![Notifications Panel](images/image-9.png)
+![Notifications Panel](wireframe-images\08-notification-panel.png)
 
 ## View Full Wireframe
-![Full Wireframe](<images/TaskTeam Wireframe.png>)
+![Full Wireframe](<wireframe-images/TaskTeam-Wireframe.png>)
 [Link to Full Wireframe](https://notes.myscript.com/app/page/a423e6a2-0322-4e88-8e01-732e9cfc5cfe)
 
 ## Notes
