@@ -64,3 +64,86 @@
 **Postconditions:**
 - User session is terminated.
 - User is logged out of the system.
+
+## UC-4: Create Team 
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+
+**Main Flow:**
+1. User selects the option to create a new team.
+2. User enters a team name (and optional description).
+3. User submits the form.
+4. System validates the input.
+5. System creates a new team.
+6. System assigns the user as a member of the team.
+7. System sets the user as the team owner.
+8. System displays the newly created team.
+
+**Alternate Flows:**
+- 4a. Invalid or missing team name -> system displays an error message.
+
+**Postconditions:**
+- A new team exists.
+- User is a member and owner of the team. 
+
+## UC-5: Join Team 
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+- Team exists.
+
+**Main Flow:**
+1. User selects the option to join a team.
+2. User enters a team invite code.
+3. System validates the team information.
+4. System adds the user to the team.
+5. System displays the team dashboard.
+
+**Alternate Flows:**
+- 3a. Invalid invite code -> system displays an error message.
+- 4a. User is already a member -> system prevents deuplicate membership.
+
+**Postconditions:**
+- User is a member of the team.
+
+## UC-6: View My Teams 
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in. 
+
+**Main Flow:**
+1. User navigates to the dashboard.
+2. System retrieves all teams the user belongs to.
+3. System displays the list of teams.
+4. User selects a team to view its workspace.
+
+**Postconditions:**
+- User can view and access their teams.
+
+## UC-7: Leave Team
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+- User is a member of the team.
+
+**Main Flow:**
+1. User selects the option to leave a team.
+2. System asks for confirmation.
+3. User confirms the action.
+4. System removes the user from the team.
+5. System updates the user's team list.
+
+**Alternate Flows:**
+- 4a. User is the only owner -> system prevents leaving or requires ownership transfer.
+
+**Postconditions:**
+- User is no longer a member of the team.
