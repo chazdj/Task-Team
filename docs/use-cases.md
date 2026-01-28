@@ -308,3 +308,95 @@
 
 **Postconditions:**
 - Project is archived and no longer active.
+
+## UC-17: Create Task
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+- User is a member of the project's team.
+
+**Main Flow:**
+1. User navigates to a project dashboard.
+2. User selects the option to create a new task.
+3. User enters task details (title, optional description).
+4. User submits the task.
+5. System validates the input.
+6. System creates the task under the project.
+7. System displays the task in the To Do column.
+
+**Alternate Flows:**
+- 5a. Missing or invalid task title -> system displays an error.
+
+**Postconditions:**
+- A new task exists in the project.
+
+## UC-18: Update Task Status
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+- Task exists.
+
+**Main Flow:**
+1. User selects a task.
+2. User moves the task between To Do, In Progress, or Done.
+3. System updates the task status.
+4. System updates the project board.
+
+**Postconditions:**
+- Task status reflects progress.
+
+## UC-19: Assign Task to Team Member
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+- Task exists.
+- Assignee is a member of the team.
+
+**Main Flow:**
+1. User opens a task.
+2. User selects a team member to assign the task to.
+3. System updates the task assignment.
+4. System notifies the assigned user.
+
+**Postconditions:**
+- Task is assigned to a team member.
+
+## UC-20: Add Task Details
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+- Task exists.
+
+**Main Flow:**
+1. User opens a task.
+2. User adds or edits task details (description, priority, checklist).
+3. User saves the changes.
+4. System updates the task.
+
+**Postconditions:**
+- Task details are updated.
+
+## UC-21: Set Task Due Date and Priority
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+- Task exists.
+
+**Main Flow:**
+1. User opens a task.
+2. User sets a due date and priority level.
+3. User saves the changes.
+4. System updates the task metadata.
+
+**Postconditions:**
+- Task has a defined due date and priority.
