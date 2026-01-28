@@ -231,3 +231,80 @@
 
 **Postconditions:**
 - Message is edited or removed successfully.
+
+## UC-13: Create Project
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+- User is a member of the team.
+
+**Main Flow:**
+1. User navigates to a team workspace.
+2. User selects the option to create a new project.
+3. User enters project details (name, optional description).
+4. User submits the form.
+5. System validates the input.
+6. System creates the project under the selected team.
+7. System displays the new project dashboard.
+
+**Alternate Flows:**
+- 5a. Invalid or missing project name → system displays an error.
+
+**Postconditions:**
+- A new project exists within the team.
+
+## UC-14: View Active Projects
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+- User is a member of the team.
+
+**Main Flow:**
+1. User opens the team workspace.
+2. System retrieves all active projects for the team.
+3. System displays the list of active projects.
+
+**Postconditions:**
+- User can see all ongoing projects.
+
+## UC-15: View Archived Projects
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+- Archived projects exist.
+
+**Main Flow:**
+1. User navigates to the archived projects section.
+2. System retrieves archived projects for the team.
+3. System displays the archived projects list. 
+
+**Postconditions:**
+- User can reference completed or paused projects.
+
+## UC-16: Archive Project
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+- User has permission to manage the project.
+
+**Main Flow:**
+1. User selects a project.
+2. User chooses the option to archive the project.
+3. System asks for confirmation.
+4. User confirms the action.
+5. System marks the project as archived.
+6. System removes the project from the active projects list.
+
+**Alternate Flows:**
+- 2a. User lacks permission → system denies the action.
+
+**Postconditions:**
+- Project is archived and no longer active.
