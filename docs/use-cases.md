@@ -147,3 +147,87 @@
 
 **Postconditions:**
 - User is no longer a member of the team.
+
+## UC-8: Send Chat Message
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**.
+- User is logged in
+- User is a member of the team.
+
+**Main Flow:**
+1. User opens the team chat.
+2. User types a message.
+3. User sends the message.
+4. System saves the message.
+5. System broadcasts the message to other team members in real time.
+
+**Postconditions:**
+- Message appears in the team chat for all members.
+
+## UC-9: View Real-Time Chat Messages 
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in
+- User is a member of the team.
+
+**Main Flow:**
+1. User opens the team chat.
+2. System retrieves recent messages.
+3. System displays incoming messages in real time.
+
+**Postconditions:**
+- User can view live chat updates.
+
+## UC-10: View Message Sender and Timestamp
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- Messages exist in the chat.
+
+**Main Flow:**
+1. User views messages in the team chat/
+2. System displays the sender's name and timestamp with each message.
+
+**Postconditions:**
+- Chat messages are clear and attributable.
+
+## UC-11: View Chat History
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+- User is a member of the team.
+
+**Main Flow:**
+1. User scrolls up in the team chat.
+2. System loads older messages.
+3. System displays chat history.
+
+**Postconditions:**
+- User can view previous conversations.
+
+## UC-12: Edit or Delete Chat Message
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+- User is the author of the message.
+
+**Main Flow:**
+1. User selects one of their own messages.
+2. User chooses to edit or delete the message.
+3. System updates or removes the message.
+4. System updates the chat view.
+
+**Alternate Flows:**
+- 2a. User attempts to edit another user's message -> system denies action.
+
+**Postconditions:**
+- Message is edited or removed successfully.
