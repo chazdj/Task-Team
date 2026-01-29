@@ -1,12 +1,35 @@
+<!--
+Use Case Template:
+### UC-: 
+
+**Primary Actor:** 
+
+**Preconditions:**
+- 
+
+**Main Flow:**
+1. 
+
+**Alternate Flow:**
+- 
+
+**Postconditions:**
+- 
+-->
+
 # Use Cases
 
-## UC-1: Register Account
+This document outlines the primary use cases for the TaskTeam application, covering authentication, team collaboration, projects, tasks, discussions, notifications, and user preferences.
+
+## Authentication
+
+### UC-1: Register Account
 
 **Primary Actor:** User
 
 **Preconditions:**
-- User is not logged in
-- User has a valid email
+- User is not logged in.
+- User has a valid email.
 
 **Main Flow:**
 1. User navigates to the Sign Up page.
@@ -25,8 +48,8 @@
 **Postconditions:**
 - A new user account exists.
 - User is authenticated.
-
-## UC-2: Log In
+---
+### UC-2: Log In
 
 **Primary Actor:** Returning User
 
@@ -48,8 +71,8 @@
 **Postconditions:**
 - User is authenticated.
 - User can access teams, projects, and tasks.
-
-## UC-3: Log Out
+---
+### UC-3: Log Out
 
 **Primary Actor:** Authenticated User
 
@@ -65,7 +88,9 @@
 - User session is terminated.
 - User is logged out of the system.
 
-## UC-4: Create Team 
+## Team Management
+
+### UC-4: Create Team 
 
 **Primary Actor:** Authenticated User
 
@@ -88,8 +113,8 @@
 **Postconditions:**
 - A new team exists.
 - User is a member and owner of the team. 
-
-## UC-5: Join Team 
+---
+### UC-5: Join Team 
 
 **Primary Actor:** Authenticated User
 
@@ -106,12 +131,12 @@
 
 **Alternate Flows:**
 - 3a. Invalid invite code -> system displays an error message.
-- 4a. User is already a member -> system prevents deuplicate membership.
+- 4a. User is already a member -> system prevents duplicate membership.
 
 **Postconditions:**
 - User is a member of the team.
-
-## UC-6: View My Teams 
+---
+### UC-6: View My Teams 
 
 **Primary Actor:** Authenticated User
 
@@ -126,8 +151,8 @@
 
 **Postconditions:**
 - User can view and access their teams.
-
-## UC-7: Leave Team
+---
+### UC-7: Leave Team
 
 **Primary Actor:** Authenticated User
 
@@ -148,12 +173,14 @@
 **Postconditions:**
 - User is no longer a member of the team.
 
-## UC-8: Send Chat Message
+## Team Chat
+
+### UC-8: Send Chat Message
 
 **Primary Actor:** Authenticated User
 
-**Preconditions:**.
-- User is logged in
+**Preconditions:**
+- User is logged in.
 - User is a member of the team.
 
 **Main Flow:**
@@ -165,13 +192,13 @@
 
 **Postconditions:**
 - Message appears in the team chat for all members.
-
-## UC-9: View Real-Time Chat Messages 
+---
+### UC-9: View Real-Time Chat Messages 
 
 **Primary Actor:** Authenticated User
 
 **Preconditions:**
-- User is logged in
+- User is logged in.
 - User is a member of the team.
 
 **Main Flow:**
@@ -181,8 +208,8 @@
 
 **Postconditions:**
 - User can view live chat updates.
-
-## UC-10: View Message Sender and Timestamp
+---
+### UC-10: View Message Sender and Timestamp
 
 **Primary Actor:** Authenticated User
 
@@ -190,13 +217,13 @@
 - Messages exist in the chat.
 
 **Main Flow:**
-1. User views messages in the team chat/
+1. User views messages in the team chat.
 2. System displays the sender's name and timestamp with each message.
 
 **Postconditions:**
 - Chat messages are clear and attributable.
-
-## UC-11: View Chat History
+---
+### UC-11: View Chat History
 
 **Primary Actor:** Authenticated User
 
@@ -211,8 +238,8 @@
 
 **Postconditions:**
 - User can view previous conversations.
-
-## UC-12: Edit or Delete Chat Message
+---
+### UC-12: Edit or Delete Chat Message
 
 **Primary Actor:** Authenticated User
 
@@ -232,7 +259,9 @@
 **Postconditions:**
 - Message is edited or removed successfully.
 
-## UC-13: Create Project
+## Project Management
+
+### UC-13: Create Project
 
 **Primary Actor:** Authenticated User
 
@@ -250,12 +279,12 @@
 7. System displays the new project dashboard.
 
 **Alternate Flows:**
-- 5a. Invalid or missing project name → system displays an error.
+- 5a. Invalid or missing project name -> system displays an error.
 
 **Postconditions:**
 - A new project exists within the team.
-
-## UC-14: View Active Projects
+---
+### UC-14: View Active Projects
 
 **Primary Actor:** Authenticated User
 
@@ -270,8 +299,8 @@
 
 **Postconditions:**
 - User can see all ongoing projects.
-
-## UC-15: View Archived Projects
+---
+### UC-15: View Archived Projects
 
 **Primary Actor:** Authenticated User
 
@@ -286,8 +315,8 @@
 
 **Postconditions:**
 - User can reference completed or paused projects.
-
-## UC-16: Archive Project
+---
+### UC-16: Archive Project
 
 **Primary Actor:** Authenticated User
 
@@ -304,12 +333,14 @@
 6. System removes the project from the active projects list.
 
 **Alternate Flows:**
-- 2a. User lacks permission → system denies the action.
+- 2a. User lacks permission -> system denies the action.
 
 **Postconditions:**
 - Project is archived and no longer active.
 
-## UC-17: Create Task
+## Task Management
+
+### UC-17: Create Task
 
 **Primary Actor:** Authenticated User
 
@@ -331,8 +362,8 @@
 
 **Postconditions:**
 - A new task exists in the project.
-
-## UC-18: Update Task Status
+---
+### UC-18: Update Task Status
 
 **Primary Actor:** Authenticated User
 
@@ -348,8 +379,8 @@
 
 **Postconditions:**
 - Task status reflects progress.
-
-## UC-19: Assign Task to Team Member
+---
+### UC-19: Assign Task to Team Member
 
 **Primary Actor:** Authenticated User
 
@@ -366,8 +397,8 @@
 
 **Postconditions:**
 - Task is assigned to a team member.
-
-## UC-20: Add Task Details
+---
+### UC-20: Add Task Details
 
 **Primary Actor:** Authenticated User
 
@@ -383,8 +414,8 @@
 
 **Postconditions:**
 - Task details are updated.
-
-## UC-21: Set Task Due Date and Priority
+---
+### UC-21: Set Task Due Date and Priority
 
 **Primary Actor:** Authenticated User
 
@@ -401,13 +432,15 @@
 **Postconditions:**
 - Task has a defined due date and priority.
 
-## UC-22: Create Discussion Post
+## Discussions
+
+### UC-22: Create Discussion Post
 
 **Primary Actor:** Authenticated User
 
 **Preconditions:**
 - User is logged in.
-- User is a member of the project's 
+- User is a member of the project's team.
 
 **Main Flow:**
 1. User navigates to a project’s discussion board.
@@ -420,8 +453,8 @@
 
 **Postconditions:**
 - A new discussion post exists in the project.
-
-## UC-23: Post Daily Memo
+---
+### UC-23: Post Daily Memo
 
 **Primary Actor:** Authenticated User
 
@@ -437,8 +470,8 @@
 
 **Postconditions:**
 - Daily memo is visible to the team.
-
-## UC-24: Ask a Question
+---
+### UC-24: Ask a Question
 
 **Primary Actor:** Authenticated User
 
@@ -453,8 +486,8 @@
 
 **Postconditions:**
 -  Question is available for team responses.
-
-## UC-25: Categorize Discussion Post
+---
+### UC-25: Categorize Discussion Post
 
 **Primary Actor:** Authenticated User
 
@@ -467,8 +500,8 @@
 
 **Postconditions:**
 -  Discussion post is categorized.
-
-## UC-26: Reply to Discussion Post
+---
+### UC-26: Reply to Discussion Post
 
 **Primary Actor:** Authenticated User
 
@@ -484,8 +517,8 @@
 
 **Postconditions:**
 -  Reply is associated with the discussion post.
-
-## UC-27: Edit or Delete Discussion Post
+---
+### UC-27: Edit or Delete Discussion Post
 
 **Primary Actor:** Authenticated User
 
@@ -503,8 +536,8 @@
 
 **Postconditions:**
 -  Post is updated or removed.
-
-## UC-28: Pin Discussion Post
+---
+### UC-28: Pin Discussion Post
 
 **Primary Actor:** Authenticated User
 
@@ -519,8 +552,8 @@
 
 **Postconditions:**
 -  Post remains easily visible.
-
-## UC-29: Search Discussion Posts
+---
+### UC-29: Search Discussion Posts
 
 **Primary Actor:** Authenticated User
 
@@ -535,7 +568,8 @@
 **Postconditions:**
 -  User can locate past discussions quickly.
 
-## UC-30: View Project Activity Feed
+## Activity Feed
+### UC-30: View Project Activity Feed
 
 **Primary Actor:** Authenticated User
 
@@ -551,8 +585,8 @@
 
 **Postconditions:**
 -  User can view recent project activity.
-
-## UC-31: View Actor of Activity
+---
+### UC-31: View Actor of Activity
 
 **Primary Actor:** Authenticated User
 
@@ -566,7 +600,8 @@
 **Postconditions:**
 -  User has visibility into who performed each action.
 
-## UC-32: Receive Task Assignment Notification 
+## Notifications
+### UC-32: Receive Task Assignment Notification 
 
 **Primary Actor:** Authenticated User
 
@@ -581,8 +616,8 @@
 
 **Postconditions:**
 -  User is notified of task-related updates.
-
-## UC-33: Receive Discussion Reply Notification
+---
+### UC-33: Receive Discussion Reply Notification
 
 **Primary Actor:** Authenticated User
 
@@ -597,8 +632,8 @@
 
 **Postconditions:**
 -  User is notified of discussion activity.
-
-## UC-34: Receive Blocker Notification
+---
+### UC-34: Receive Blocker Notification
 
 **Primary Actor:** Authenticated User
 
@@ -612,8 +647,8 @@
 
 **Postconditions:**
 -  Team members are aware of blocking issues.
-
-## UC-35: View Notifications Panel
+---
+### UC-35: View Notifications Panel
 
 **Primary Actor:** Authenticated User
 
@@ -628,7 +663,8 @@
 **Postconditions:**
 -  User can view recent notifications.
 
-## UC-36: Mark Notifications as Read
+## Notification Management
+### UC-36: Mark Notifications as Read
 
 **Primary Actor:** Authenticated User
 
@@ -642,8 +678,8 @@
 
 **Postconditions:**
 -  Notification is marked as read.
-
-## UC-37: Navigate from Notification
+---
+### UC-37: Navigate from Notification
 
 **Primary Actor:** Authenticated User
 
@@ -656,3 +692,62 @@
 
 **Postconditions:**
 -  User is taken directly to the relevant context.
+
+## Nice-to-Have Features
+### UC-38: Switch Theme (Light/Dark Mode)
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+
+**Main Flow:**
+1. User opens application settings.
+2. User selects light mode or dark mode.
+3. System updates the interface theme.
+
+**Postconditions:**
+-  UI theme changes immediately.
+---
+### UC-39: Save UI Preferences
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+
+**Main Flow:**
+1. User updates UI preferences (theme, layout).
+2. System saves the preferences.
+3. System applies the preferences on future sessions.
+
+**Postconditions:**
+-  User preferences persist across sessions.
+---
+### UC-40: View Team Member Avatars
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is a member of a team.
+
+**Main Flow:**
+1. User views a team or project workspace.
+2. System displays avatars for team members.
+
+**Postconditions:**
+-  Team members are visually identifiable.
+---
+### UC-41: View Online Status
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+
+**Main Flow:**
+1. User views a team or chat interface.
+2. System displays online or offline status for team members.
+
+**Postconditions:**
+-  User can see who may be available.
