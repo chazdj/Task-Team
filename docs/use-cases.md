@@ -400,3 +400,137 @@
 
 **Postconditions:**
 - Task has a defined due date and priority.
+
+## UC-22: Create Discussion Post
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+- User is a member of the project's 
+
+**Main Flow:**
+1. User navigates to a project’s discussion board.
+2. User selects the option to create a new discussion post.
+3. User enters a title and content.
+4. User selects a discussion category (Daily Memo, Question, Discussion, Blocker).
+5. User submits the post.
+6. System validates the input.
+7. System creates the discussion post.
+
+**Postconditions:**
+- A new discussion post exists in the project.
+
+## UC-23: Post Daily Memo
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+
+**Main Flow:**
+1. User creates a new discussion post.
+2. User selects Daily Memo as the category.
+3. User submits the post.
+4. System publishes the memo to the discussion board.
+
+
+**Postconditions:**
+- Daily memo is visible to the team.
+
+## UC-24: Ask a Question
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+
+**Main Flow:**
+1. User creates a new discussion post.
+2. User selects Question as the category.
+3. User submits the post.
+4. System publishes the question.
+
+**Postconditions:**
+-  Question is available for team responses.
+
+## UC-25: Categorize Discussion Post
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is creating or editing a discussion post.
+
+**Main Flow:**
+1. User selects a discussion category.
+2. System applies the category label to the post.
+
+**Postconditions:**
+-  Discussion post is categorized.
+
+## UC-26: Reply to Discussion Post
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+- Discussion post exists.
+
+**Main Flow:**
+1. User opens a discussion post.
+2. User writes a reply.
+3. User submits the reply.
+4. System saves the reply and displays it under the post.
+
+**Postconditions:**
+-  Reply is associated with the discussion post.
+
+## UC-27: Edit or Delete Discussion Post
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+- User is the author of the post.
+
+**Main Flow:**
+1. User selects their discussion post.
+2. User chooses to edit or delete it.
+3. System updates or removes the post.
+
+**Alternate Flows:**
+- 2a. User attempts to modify another user's post -> system denies action.
+
+**Postconditions:**
+-  Post is updated or removed.
+
+## UC-28: Pin Discussion Post
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User has permission to manage discussions.
+
+**Main Flow:**
+1. User selects a discussion post.
+2. User chooses the option to pin the post.
+3. System marks the post as pinned.
+4. System displays the post at the top of the discussion board.
+
+**Postconditions:**
+-  Post remains easily visible.
+
+## UC-29: Search Discussion Posts
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- Discussion posts exist.
+
+**Main Flow:**
+1. User enters a search query.
+2. System searches discussion posts.
+3. System displays matching results.
+
+**Postconditions:**
+-  User can locate past discussions quickly.
