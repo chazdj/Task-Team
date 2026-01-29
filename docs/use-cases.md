@@ -534,3 +534,125 @@
 
 **Postconditions:**
 -  User can locate past discussions quickly.
+
+## UC-30: View Project Activity Feed
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+- User is a member of the project's team.
+
+**Main Flow:**
+1. User navigates to a project dashboard.
+2. User opens the activity feed.
+3. System retrieves recent project activity.
+4. System displays a read-only list of actions (e.g., task created, task completed, discussion posted).
+
+**Postconditions:**
+-  User can view recent project activity.
+
+## UC-31: View Actor of Activity
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- Activity entries exist.
+
+**Main Flow:**
+1. User views an activity item.
+2. System displays the user who performed the action and the timestamp.
+
+**Postconditions:**
+-  User has visibility into who performed each action.
+
+## UC-32: Receive Task Assignment Notification 
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+- A task is assigned to the user.
+
+**Main Flow:**
+1. System detects a task assignment or update.
+2. System creates a notification for the assigned user.
+3. System displays the notification in the notification panel.
+
+**Postconditions:**
+-  User is notified of task-related updates.
+
+## UC-33: Receive Discussion Reply Notification
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User created a discussion post.
+- Another user replies to the post.
+
+**Main Flow:**
+1. System detects a reply to the discussion.
+2. System generates a notification for the discussion author.
+3. System displays the notification.
+
+**Postconditions:**
+-  User is notified of discussion activity.
+
+## UC-34: Receive Blocker Notification
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- A discussion is marked as a Blocker.
+
+**Main Flow:**
+1. System detects the blocker status.
+2. System creates notifications for relevant project members.
+3. System displays the notification.
+
+**Postconditions:**
+-  Team members are aware of blocking issues.
+
+## UC-35: View Notifications Panel
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- User is logged in.
+
+**Main Flow:**
+1. User opens the notification panel.
+2. System retrieves recent notifications.
+3. System displays notifications in chronological order.
+
+**Postconditions:**
+-  User can view recent notifications.
+
+## UC-36: Mark Notifications as Read
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- Notification exists.
+
+**Main Flow:**
+1. User selects a notification.
+2. User marks it as read.
+3. System updates the notification status.
+
+**Postconditions:**
+-  Notification is marked as read.
+
+## UC-37: Navigate from Notification
+
+**Primary Actor:** Authenticated User
+
+**Preconditions:**
+- Notification exists.
+
+**Main Flow:**
+1. User clicks a notification.
+2. System redirects the user to the related task, discussion, or project.
+
+**Postconditions:**
+-  User is taken directly to the relevant context.
