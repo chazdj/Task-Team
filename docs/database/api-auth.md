@@ -1,27 +1,3 @@
-<!--
-## POST /auth/
-
-Registers a new user account.
-
-### Request Body
-```json
-{
- 
-}
-```
----
-
-### Success Response
-```json
-{
-  
-}
-```
----
-
-### Error Responses
-- 
--->
 # Authentication API (MVP)
 
 This document defines the authentication-related API endpoints for the TaskTeam MVP.
