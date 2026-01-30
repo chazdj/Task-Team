@@ -16,26 +16,26 @@ Wireframes were created to define layout, navigation, and feature placement befo
 - Notifications Panel
 
 ## Authentication
-![Login / Sign Up](wireframe-images\01-authentication.png)
+![Login / Sign Up](wireframe-images/01-authentication.png)
 
 ## Teams Dashboard
-![Teams Dashboard](wireframe-images\02-dashboard.png)
+![Teams Dashboard](wireframe-images/02-dashboard.png)
 
 ## Projects Screen
-![Active Projects Screen](wireframe-images\03-active-projects.png)
-![Archived Projects Screen](wireframe-images\04-archive-projects.png)
+![Active Projects Screen](wireframe-images/03-active-projects.png)
+![Archived Projects Screen](wireframe-images/04-archive-projects.png)
 
 ## Task Board with Team Chat
-![Task Board with Team Chat](wireframe-images\05-task-board.png)
+![Task Board with Team Chat](wireframe-images/05-task-board.png)
 
 ## Project Discussions
-![Project Discussions Forum](wireframe-images\06-project-discussion.png)
+![Project Discussions Forum](wireframe-images/06-project-discussion.png)
 
 ## Activity Feed (read-only)
-![Project Activity Feed](wireframe-images\07-activity-feed.png)
+![Project Activity Feed](wireframe-images/07-activity-feed.png)
 
 ## Notifications Panel
-![Notifications Panel](wireframe-images\08-notification-panel.png)
+![Notifications Panel](wireframe-images/08-notification-panel.png)
 
 ## View Full Wireframe
 ![Full Wireframe](<wireframe-images/TaskTeam-Wireframe.png>)
