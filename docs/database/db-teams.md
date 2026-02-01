@@ -10,7 +10,7 @@ Stores team-level information.
 
 | Column Name | Type      | Constraints | Description            |
 | ----------- | --------- | ----------- | ---------------------- |
-| team_id     | UUID      | PK          | Unique team identifier |
+| id     | UUID      | PK          | Unique team identifier |
 | team_name   | VARCHAR   | NOT NULL    | Team name              |
 | created_at  | TIMESTAMP | NOT NULL    | Team creation time     |
 
@@ -22,7 +22,7 @@ Associative table linking users and teams.
 
 | Column Name    | Type      | Constraints                 | Description                        |
 | -------------- | --------- | --------------------------- | ---------------------------------- |
-| team_member_id | UUID      | PK                          | Unique membership record           |
+| id | UUID      | PK                          | Unique membership record           |
 | user_id        | UUID      | FK → user.user_id, NOT NULL | Member user                        |
 | team_id        | UUID      | FK → team.team_id, NOT NULL | Associated team                    |
 | role           | VARCHAR   | NOT NULL                    | Member role (owner, admin, member) |

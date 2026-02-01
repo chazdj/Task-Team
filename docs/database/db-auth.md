@@ -1,6 +1,6 @@
 # Authentication Database Schema (MVP)
 
-This document defines the database schema required to support authentication in TaskTeam.
+This document defines the database schema required to support **authentication** in TaskTeam.
 
 ---
 ## users Table
@@ -9,7 +9,7 @@ Stores user account and identity information.
 
 | Column Name   | Type         | Constraints      | Description                |
 | ------------- | ------------ | ---------------- | -------------------------- |
-| user_id       | UUID         | PK               | Unique user identifier     |
+| id       | UUID         | PK               | Unique user identifier     |
 | email         | VARCHAR(255) | UNIQUE, NOT NULL | User email address         |
 | password_hash | TEXT         | NOT NULL         | Securely hashed password   |
 | name          | VARCHAR(100) |                  | Display name for the user  |
