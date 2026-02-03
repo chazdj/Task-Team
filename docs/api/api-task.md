@@ -115,3 +115,35 @@ Authenticated user
 
 **Success Response**
 * Task is assigned and visible to the assignee.
+
+---
+
+## View Tasks for a Project
+
+**Description**
+
+Retrieves all tasks associated with a specific project.
+
+**Actor**
+
+Authenticated user
+
+**Preconditions**
+* User is logged in.
+* User is a member of the project's team.
+* Project exists.
+
+**System Behavior**
+1. User navigates to a project dashboard.
+2. System validates project access.
+3. System retrieves all tasks for the project.
+4. System groups tasks by status (To Do, In Progress, Done).
+5. System displays tasks on the project board.
+
+**Database Interaction**
+* SELECT * FROM `task`
+    * WHERE project_id = ?
+    * ORDER BY created_at ASC
+
+**Success Response**
+* Task board is populated with all project tasks.
