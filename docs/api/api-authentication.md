@@ -5,9 +5,11 @@ This document defines the backend operations required to support user authentica
 ## Register User
 
 **Description**
+
 Creates a new user account using an email and password.
 
 **Actor**
+
 Unauthenticated user
 
 **Preconditions**
@@ -42,9 +44,11 @@ Unauthenticated user
 ## Log In User
 
 **Description**
+
 Authenticates an existing user using email and password.
 
 **Actor**
+
 Unauthenticated user
 
 **Preconditions**
@@ -76,9 +80,11 @@ Unauthenticated user
 ## Log Out User
 
 **Description**
+
 Ends the user's authenticated session.
 
 **Actor**
+
 Authenticated user
 
 **Preconditions**
