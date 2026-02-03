@@ -73,3 +73,45 @@ Authenticated user
 
 **Success Response**
 * Task status is updated and visible to all team members.
+
+---
+
+## Assign Task to User
+
+**Description**
+
+Assigns a task to a specific team member.
+
+**Actor**
+
+Authenticated user
+
+**Preconditions**
+* User is logged in.
+* Task exists.
+* Assigned user is a member of the project's team.
+
+**System Behavior**
+1. User opens a task.
+2. User selects a team member.
+3. System validates team membership.
+4. System updates the task assignment.
+5. System records the assignment in the activity log.
+6. System notifies the assigned user.
+
+**Database Interaction**
+* UPDATE `task`
+    * assigned_user_id
+* INSERT INTO `activity`
+    * project_id
+    * user_id
+    * action = "Assigned task to user"
+    * created_at
+* INSERT INTO `notification`
+    * user_id
+    * project_id
+    * type = "task_assigned"
+    * is_read = false
+
+**Success Response**
+* Task is assigned and visible to the assignee.
