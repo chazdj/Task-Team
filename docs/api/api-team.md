@@ -24,8 +24,8 @@ Authenticated user
 4. User becomes the team owner.
 
 **Database Interaction**
-* INSERT into `team`.
-* INSERT into `team_member`.
+* INSERT into `team`
+* INSERT into `team_member`
 
 **Success Response**
 * Team is created successfully.
@@ -55,8 +55,8 @@ Authenticated user
 5. User is added to the team with role = `member`.
 
 **Database Interaction**
-* SELECT team by `team_id`.
-* INSERT into `team_member`.
+* SELECT team by `team_id`
+* INSERT into `team_member`
 
 **Success Response**
 * User is successfully added to the team.
@@ -86,8 +86,8 @@ Authenticated user
 5. User is no longer associated with the team.
 
 **Database Interaction**
-* SELECT from `team_member`.
-* DELETE from `team_member`.
+* SELECT from `team_member`
+* DELETE from `team_member`
 
 **Failure Conditions**
 * If the user is the team owner, the system prevents leaving unless ownership is transferred.
@@ -117,8 +117,8 @@ Authenticated user
 4. System returns the list of teams.
 
 **Database Interaction**
-* SELECT from `team_member`.
-* JOIN with `team`.
+* SELECT from `team_member`
+* JOIN with `team`
 
 **Success Response**
 * List of teams with basic metadata (id, name, role)
