@@ -29,7 +29,7 @@ Unauthenticated user
 5. Generate an authentication session or token.
 
 **Database Interaction**
-* INSERT into `user`.
+* INSERT into `user`
 
 **Success Response**
 * User account is created.
@@ -65,7 +65,7 @@ Unauthenticated user
 4. If valid, create an authentication session or token.
 
 **Database Interaction**
-* SELECT from `user`.
+* SELECT from `user`
 
 **Success Response**
 * Authentication token/session returned.
