@@ -36,3 +36,40 @@ Authenticated user
 
 **Success Response**
 * Task is created and visible in the project.
+
+---
+
+## Update Task Status
+
+**Description**
+
+Moves a task between workflow states (To Do, In Progress, Done).
+
+**Actor**
+
+Authenticated user
+
+**Preconditions**
+* User is logged in.
+* Task exists.
+* User is a member of the project's team.
+
+**System Behavior**
+1. User selects a task.
+2. User changes the task status.
+3. System validates the new status.
+4. System updates the task record.
+5. System records the change in the activity log.
+6. System updates the project board in real time.
+
+**Database Interaction**
+* UPDATE `task`
+    * status
+* INSERT INTO `activity`
+    * project_id
+    * user_id
+    * action = "Updated task status"
+    * created_at
+
+**Success Response**
+* Task status is updated and visible to all team members.
