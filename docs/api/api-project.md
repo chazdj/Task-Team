@@ -23,7 +23,7 @@ Authenticated team member
 4. System returns the newly created peoject.
 
 **Database Interaction**
-* INSERT into `project`
+* INSERT INTO `project`
 * Validate membership via `team_member`
 
 **Success Response**
@@ -55,7 +55,7 @@ Authenticated team member
 4. System returns the list of projects.
 
 **Database Interaction**
-* SELECT from `project`
+* SELECT FROM `project`
 * WHERE tead_id = ?
 * AND status = `Active`
 
@@ -84,7 +84,7 @@ Authenticated team member
 4. System returns archived project list.
 
 **Database Interaction**
-* SELECT from `project`
+* SELECT FROM `project`
 * WHERE tead_id = ?
 * AND status = `Archived`
 

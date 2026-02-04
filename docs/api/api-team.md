@@ -55,8 +55,8 @@ Authenticated user
 5. User is added to the team with role = `member`.
 
 **Database Interaction**
-* SELECT team by `team_id`
-* INSERT into `team_member`
+* SELECT team BY `team_id`
+* INSERT INTO `team_member`
 
 **Success Response**
 * User is successfully added to the team.
@@ -86,8 +86,8 @@ Authenticated user
 5. User is no longer associated with the team.
 
 **Database Interaction**
-* SELECT from `team_member`
-* DELETE from `team_member`
+* SELECT FROM `team_member`
+* DELETE FROM `team_member`
 
 **Failure Conditions**
 * If the user is the team owner, the system prevents leaving unless ownership is transferred.
@@ -117,7 +117,7 @@ Authenticated user
 4. System returns the list of teams.
 
 **Database Interaction**
-* SELECT from `team_member`
+* SELECT FROM `team_member`
 * JOIN with `team`
 
 **Success Response**

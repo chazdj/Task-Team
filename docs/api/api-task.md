@@ -27,7 +27,7 @@ Authenticated user
 7. System displays the task on the project board.
 
 **Database Interaction**
-* INSERT into `task`
+* INSERT INTO `task`
     * project_id
     * title
     * description (optional)
